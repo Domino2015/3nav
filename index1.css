@@ -1,0 +1,80 @@
+.nav1{
+    margin: 100px 0 0 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: '微软雅黑';
+}
+ul{
+    list-style: none;
+    background: #777;
+}
+.nav1 a{
+    display: block;
+    text-decoration: none;
+    width: 110px;height: 36px;
+    line-height:36px;
+    text-align: center;
+    color: #000;
+}
+.nav3 a{
+    width: 230px;
+}
+.nav1 a:hover{
+    background-color: #f00;
+    color: #fff;
+}
+.nav1 li{
+    position: relative;
+}
+.nav1{
+    width: 110px;
+}
+.li1:hover{
+    background-color: #999;
+}
+.li2:hover{
+    background-color: #bbb;
+}
+.nav1 ul{
+    position:absolute;
+    left: 109px;
+    top: 0;
+    display: none;
+}
+.li1:hover .nav2{
+    display: block;
+    background-color: #999;
+}
+.li2:hover .nav3{
+    display: block;
+    background-color: #bbb;
+}
+/*下面对宽度进行调整*/
+.huoying .li2>a{
+    width: 140px;
+}
+.huoying .nav3{
+    left: 139px;
+}
+.huoying .li3>a{
+    width: 120px;
+}
+.sishen .li3>a{
+    width: 120px;
+}
+.yinhun .li3>a{
+    width: 120px;
+}
+.yaowei .li3>a{
+    width: 80px;
+}
+/*总结：
+    1.中心思想是ul-li-a
+    2.绝对定位
+    3.颜色渐进
+    4.display:none时候隐藏元素;
+    5.li:hover时，只要以其为容器的元素被选中，它就改变;
+*/
